@@ -1,0 +1,18 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Moved to combsmith</title>
+<meta name="robots" content="noindex">
+<script>
+  // GitHub Pages serves this file for every path the org site does not have, so it
+  // catches old project-site links like /google-app-scripts/deploy/?x=1#y and sends
+  // them to the same path on the renamed org. Anything else goes to the org page.
+  (function () {
+    var projects = ["google-app-scripts"];
+    var first = location.pathname.split("/")[1] || "";
+    var target = projects.indexOf(first) !== -1
+      ? "https://combsmith.github.io" + location.pathname + location.search + location.hash
+      : "https://github.com/combsmith";
+    location.replace(target);
+  })();
+</script>
+<p>This site moved to <a href="https://github.com/combsmith">github.com/combsmith</a>.</p>
